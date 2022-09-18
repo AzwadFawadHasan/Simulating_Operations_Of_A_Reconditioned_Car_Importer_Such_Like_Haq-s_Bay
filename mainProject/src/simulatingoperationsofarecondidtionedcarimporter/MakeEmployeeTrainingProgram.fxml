@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="732.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="simulatingoperationsofarecondidtionedcarimporter.MakeEmployeeTrainingProgramController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="8.0" layoutY="233.0" prefHeight="259.0" prefWidth="718.0" />
+      <TextField fx:id="textField" layoutX="12.0" layoutY="100.0" prefHeight="61.0" prefWidth="709.0" promptText="Write Employee Training Program Here........." />
+      <Text layoutX="13.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Employee Training Program Details In The Text Field Below And Press The Post Button To Post It" textAlignment="CENTER" wrappingWidth="709.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="7.0" layoutY="169.0" mnemonicParsing="false" onAction="#handlePostIt" prefHeight="55.0" prefWidth="718.0" text="Post" />
+      <Button layoutX="12.0" layoutY="499.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="709.0" text="Back" />
+   </children>
+</AnchorPane>

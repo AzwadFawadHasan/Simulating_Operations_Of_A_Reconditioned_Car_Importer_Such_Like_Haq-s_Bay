@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingoperationsofarecondidtionedcarimporter.CustomerHomepageController">
+   <children>
+      <Button fx:id="bookForServicingfxid" layoutX="192.0" layoutY="211.0" mnemonicParsing="false" onAction="#handlebookForServicingfxid" prefHeight="25.0" prefWidth="184.0" text="Apply For Servicing" />
+      <Button fx:id="applyForInsuranceFxid" layoutX="100.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleapplyForInsuranceFxid" prefHeight="25.0" prefWidth="184.0" text="Apply For Insurance" />
+      <Button fx:id="buysparepartsandaccessoriesFxid" layoutX="157.0" layoutY="244.0" mnemonicParsing="false" onAction="#handlebuysparepartsandaccessoriesFxid" text="Buy Spare Parts And Accessories For Vehicles" />
+      <Button fx:id="SearchLoadVehiclesFxid" layoutX="285.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleSearchLoadVehiclesFxid" prefHeight="25.0" prefWidth="184.0" text="Search/Load Vehicles" />
+      <Button fx:id="buysparepartsandaccessoriesFxid" layoutX="233.0" layoutY="151.0" mnemonicParsing="false" onAction="#handlebuysparepartsandaccessoriesFxid" prefHeight="18.0" prefWidth="83.0" text="I Am Feeling Lucky?" textFill="#d3cd19">
+         <font>
+            <Font size="8.0" />
+         </font></Button>
+      <Button layoutX="216.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleCheckPromoCodes" text="Check Promo codes" />
+      <Button layoutX="50.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="470.0" text="Back" />
+      <Label layoutX="5.0" layoutY="27.0" prefHeight="83.0" prefWidth="554.0" text="                                 Home Scene For Customer" textFill="#274a5c">
+         <font>
+            <Font name="Californian FB Italic" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

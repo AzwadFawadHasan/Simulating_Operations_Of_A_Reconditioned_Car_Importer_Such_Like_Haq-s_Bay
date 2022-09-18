@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="755.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="simulatingoperationsofarecondidtionedcarimporter.LoadVehiclesController">
+   <children>
+      <TableView layoutX="126.0" layoutY="16.0" prefHeight="562.0" prefWidth="619.0">
+        <columns>
+          <TableColumn fx:id="carMakeColumnFxid" prefWidth="120.0" text="Car Make" />
+          <TableColumn fx:id="carModelColumnFxid" minWidth="6.0" prefWidth="83.0" text="Car Model" />
+            <TableColumn fx:id="carColorColumnFxid" prefWidth="84.0" text="Car Color" />
+            <TableColumn fx:id="carEngineCcFxid" prefWidth="118.0" text="Car Engine CC" />
+            <TableColumn fx:id="carPriceFxid" prefWidth="118.0" text="price" />
+        </columns>
+      </TableView>
+      <Button fx:id="loadfxid" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleloadfxid" text="load" textFill="#bbd31b">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

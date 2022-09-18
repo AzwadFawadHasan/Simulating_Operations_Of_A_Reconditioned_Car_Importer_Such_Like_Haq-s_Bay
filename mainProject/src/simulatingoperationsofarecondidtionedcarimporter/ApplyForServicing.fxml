@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingoperationsofarecondidtionedcarimporter.ApplyForServicingController">
+   <children>
+      <Text layoutX="21.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apply For Servicing Home Scene" wrappingWidth="534.630859375">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.8767772511848342" endY="0.8625592417061612" startX="0.8767772511848341">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10339999943971634" green="0.2358115166425705" blue="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button layoutX="545.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <RadioButton fx:id="radio1" layoutX="88.0" layoutY="121.0" mnemonicParsing="false" text="Dhaka Branch">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio2" layoutX="88.0" layoutY="171.0" mnemonicParsing="false" text="Chattragram Branch" toggleGroup="$toggleGroup" />
+      <Label layoutX="39.0" layoutY="77.0" text="Select Branch" />
+      <Button layoutX="109.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleClickHere" text="Click here to apply" />
+      <Label fx:id="label" layoutX="29.0" layoutY="315.0" prefHeight="17.0" prefWidth="331.0" />
+   </children>
+</AnchorPane>

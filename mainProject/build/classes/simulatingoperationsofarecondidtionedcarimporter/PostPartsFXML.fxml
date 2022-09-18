@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingoperationsofarecondidtionedcarimporter.PostPartsFXMLController">
+   <children>
+      <Label layoutX="30.0" layoutY="80.0" prefHeight="23.0" prefWidth="97.0" text="Enter Part Name">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="25.0" prefHeight="43.0" prefWidth="335.0" text="Post Parts  Scene For Sale" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="Price" layoutX="31.0" layoutY="216.0" prefHeight="23.0" prefWidth="82.0" text="Enter Price">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PartName" layoutX="152.0" layoutY="79.0" />
+      <TextField fx:id="PartCompatibility1" layoutX="170.0" layoutY="153.0" prefHeight="19.0" prefWidth="163.0" promptText="for which car/s can the part be fitted">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Price1" layoutX="126.0" layoutY="215.0" prefHeight="25.0" prefWidth="163.0" />
+      <Label fx:id="PartCompatibility" layoutX="9.0" layoutY="151.0" prefHeight="23.0" prefWidth="140.0" text="Enter Part Compatibility">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="264.0" mnemonicParsing="false" onAction="#handlePostIt" text="Post it" />
+      <Button layoutX="22.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleSeeWhatYouHavePosted" text="See what you Posted" />
+      <Button layoutX="689.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <TableView fx:id="TableView" layoutX="336.0" layoutY="59.0" prefHeight="437.0" prefWidth="393.0">
+         <columns>
+            <TableColumn fx:id="PartNameTableColumn" prefWidth="130.0" text="Part Name" />
+            <TableColumn fx:id="compColumn" prefWidth="130.0" text="Part Compatibility" />
+            <TableColumn fx:id="pricecolumn" prefWidth="130.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

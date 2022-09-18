@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingoperationsofarecondidtionedcarimporter.PostCarFXMLController">
+   <children>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="354.0" prefHeight="200.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="carmakecolumn" prefWidth="102.0" text="Car Make" />
+          <TableColumn fx:id="carmodelcolumn" prefWidth="71.0" text="Car Model" />
+            <TableColumn fx:id="carcolorcolumn" prefWidth="76.0" text="Car Colour" />
+            <TableColumn fx:id="carenginecolumn" prefWidth="93.0" text="Car Engine CC" />
+            <TableColumn fx:id="carregnocolumn" prefWidth="170.0" text="Car Registration No" />
+            <TableColumn fx:id="carpricecolumn" prefWidth="129.0" text="Car Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="carMakeFxid" layoutX="222.0" layoutY="36.0" />
+      <TextField fx:id="carModelFxid" layoutX="222.0" layoutY="90.0" />
+      <TextField fx:id="carColourFxid" layoutX="222.0" layoutY="143.0" />
+      <TextField fx:id="CarEngineFxid" layoutX="222.0" layoutY="202.0" />
+      <TextField fx:id="CarRegNoFxid" layoutX="222.0" layoutY="262.0" />
+      <TextField fx:id="CarPriceFxid" layoutX="222.0" layoutY="314.0" />
+      <Button layoutX="482.0" layoutY="202.0" mnemonicParsing="false" onAction="#handlePostIt" text="post it" />
+      <Button layoutX="482.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleLoad" text="load" />
+      <Button layoutX="482.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Text layoutX="78.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Name" />
+      <Text layoutX="78.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Model" />
+      <Text layoutX="78.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Colour" />
+      <Text layoutX="78.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Engine CC" />
+      <Text layoutX="78.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Registration No" />
+      <Text layoutX="78.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Price" />
+   </children>
+</AnchorPane>
